@@ -8,6 +8,7 @@
 [5. 싱글톤 컨테이너](https://fantastic-asteroid-b25.notion.site/5-24-02-08-ce620f56eb4a43d68726c5b337fb7e87?pvs=4)<br>
 [6. 컴포넌트 스캔](https://fantastic-asteroid-b25.notion.site/6-24-02-19-e186901825f141d78cdb65fd9e4be62d?pvs=4)<br>
 [7. 의존관계 자동 주입](https://fantastic-asteroid-b25.notion.site/7-24-02-20-60a6f31bd8144d6cb0a02e3926d3507a?pvs=4)<br>
+[8. 빈 생명주기 콜백](https://fantastic-asteroid-b25.notion.site/8-24-03-20-8d7e2850b00645e7852c93041ce4f981?pvs=4)<br>
 
 <br>
 
