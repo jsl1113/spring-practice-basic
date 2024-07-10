@@ -12,16 +12,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequiredArgsConstructor
 public class LogDemoController {
     private final LogDemoService logDemoService;
-    private final ObjectProvider<MyLogger> myLoggerProvider;
+    private final MyLogger myLogger;
 
     @RequestMapping("log-demo")
     @ResponseBody  // 문자 그대로 보낼 수 있음
-    public String logDemo(HttpServletRequest request) {  // http-request 정보를 받을 수 있음
-        MyLogger myLogger = myLoggerProvider.getObject();
-
+    public String logDemo(HttpServletRequest request) throws InterruptedException {  // http-request 정보를 받을 수 있음
         String requestURL = request.getRequestURL().toString();
+
         myLogger.setRequestURL(requestURL);
         myLogger.log("controller test");
+        Thread.sleep(1000);
         logDemoService.logic("testId");
 
         return "OK";
