@@ -19,6 +19,7 @@ public class LogDemoController {
     public String logDemo(HttpServletRequest request) throws InterruptedException {  // http-request 정보를 받을 수 있음
         String requestURL = request.getRequestURL().toString();
 
+        System.out.println("myLogger = " + myLogger.getClass());
         myLogger.setRequestURL(requestURL);
         myLogger.log("controller test");
         Thread.sleep(1000);
